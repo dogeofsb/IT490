@@ -4,9 +4,9 @@ require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
-function doLogin($username,$password)
+function doLogin($email,$password)
 {
-    // lookup username in databas
+    // lookup username(email) in databas
     // check password
     return true;
     //return false if not valid
@@ -23,7 +23,7 @@ function requestProcessor($request)
   switch ($request['type'])
   {
     case "login":
-      return doLogin($request['username'],$request['password']);
+      return doLogin($request['email'],$request['password']);
     case "validate_session":
       return doValidate($request['sessionId']);
   }

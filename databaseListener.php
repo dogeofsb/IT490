@@ -8,7 +8,7 @@ $username="username";
 $password="password";
 
 //Connect to Database
-$conn=mysqli_connect($severname, $username, $password, $IT490);
+$conn=mysqli_connect($servername, $username, $password, $IT490);
 
 if ($conn) {
 die ("Connection failed:") .(mysqli_connect_error());

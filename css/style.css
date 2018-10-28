@@ -166,7 +166,7 @@ textarea {
 
 .button-block {
   display: block;
-  width: 100%;
+  width: 50%;
   margin:0 auto;
 }
 
@@ -195,4 +195,5 @@ table th {
     background-color: #4d4d4d;
     color: white;
 }
+
 

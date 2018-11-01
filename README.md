@@ -2,7 +2,7 @@ IT490
 
 API OpenWeatherMap
 __________________________________________________________________________________________________________________________________________
-Setup
+Setup Apache
 
 sudo apt-get install apache2
 
@@ -20,6 +20,9 @@ cd /etc/php/7.0/cli/conf.d
 
 sudo ln -s /etc/php/mods-available/amqp.ini
 
+________________________________________________________________________________________________________________________________________
+mysql
+
 sudo mysql - u root - p
 
 CREATE USER 'IT490User'@'localhost' IDENTIFIED BY 'password';
@@ -27,6 +30,10 @@ CREATE USER 'IT490User'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'IT490User'@'localhost' WITH GRANT OPTION;
 
 quit
+
+________________________________________________________________________________________________________________________________________
+
+rabbitmq
 
 testRabbitMQ.ini
 

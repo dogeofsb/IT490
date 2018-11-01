@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$user = 'root';
-$pass = '11computers!';
+$user = 'IT490User';
+$pass = 'password';
 $db = 'accounts';
 $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);

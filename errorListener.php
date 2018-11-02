@@ -1,10 +1,13 @@
-#!/usr/bin/php
 <?php
+//php has a build in error logger, this file makes use of it
 //show errors
-display_errors = on
-error_reporting = E_ALL
+ini_set('display_errors', 1);
 //log errors
-log_errors = on
-error_log = "/tmp/php-error.log"
-error_log("An error has occured",3,error.log);
+ini_set('log_errors', 1);
+//log errors to file
+ini_set('error_log', directory (file). '/log.txt');
+error_reporting(E_ALL);
+
+//error_log = "/tmp/php-error.log"
+
 ?>
